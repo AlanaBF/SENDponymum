@@ -1,0 +1,210 @@
+:root {
+  text-align: center;
+  --pink: #dabdea;
+  --purple: #8880cc;
+  --dark-blue: #133350;
+  --navy-blue: #181d31;
+  --yellow: #fee46e;
+  height: 100vh;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sue Ellen Francisco", cursive;
+  max-width: 100%;
+  min-height: 90vh;
+  text-align: center;
+  background-color: var(--yellow);
+  color: var(--dark-blue);
+}
+
+h1 {
+  font-family: "Gochi Hand", cursive;
+  font-size: 5em;
+  font-weight: 900;
+}
+
+p {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-size: 2em;
+  padding: 20px 40px;
+}
+
+.main-image {
+  width: 40%;
+}
+
+.pony-logo {
+  width: 40% !important;
+margin-right: 40px;
+}
+
+.page-background {
+  min-height: 80vh;
+}
+
+/* Header Component */
+
+.navigation {
+  width: 100% !important;
+  height: 100% !important;
+  font-size: 1rem !important;
+  background-color: var(--purple) !important;
+  justify-content: space-around !important;
+  color: var(--dark-blue);
+}
+
+.navIcons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none !important;
+}
+
+.navbarIcons {
+  font-size: 2rem !important;
+  color: var(--pink) !important;
+  padding: 10px;
+}
+
+.navbarIcons:hover {
+  font-size: 2rem !important;
+  color: var(--dark-blue) !important;
+  padding: 10px;
+}
+
+.navbarBrand {
+  color: var(--dark-blue) !important;
+  font-size: 100%;
+  margin-left: 0%;
+}
+
+/*  Footer Component */
+
+.footer {
+  width: 100%;
+  background-color: var(--purple) !important;
+  color: var(--dark-blue);
+  font-size: 1rem !important;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Home Page */
+
+/* GridComponent.css */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+}
+
+.grid-item {
+  border: 1px solid #ccc;
+  padding: 1px;
+  margin: 2%;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.journey-grid-container {
+  border: var(--purple) 5px solid;
+  margin: 1% 10%;
+}
+
+.new-services {
+  background-color: var(--pink);
+  padding: 10px;
+  margin: 50px;
+}
+/* Contact Me Page */
+
+.buttonGroup {
+  color: var(--pink);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fa {
+  font-size: 6rem;
+  font-weight: bold;
+  color: var(--pink);
+}
+
+.fa:hover {
+  font-size: 5rem;
+  color: var(--purple);
+}
+
+span {
+  display: flex;
+  justify-content: space-around;
+  margin: 0% 20% 0% 20%;
+  align-items: center;
+}
+
+/* Page Not Found */
+
+.notFoundPageContainer {
+  width: 100%;
+  background-color: var(--yellow);
+  height: 85vh;
+}
+
+.notFoundPageInner {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.notFoundPageContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 20px solid var(--pink);
+  border-radius: 20px;
+  width: 80%;
+  background-color: var(--purple);
+  color: var(--dark-blue);
+}
+
+.notFoundPageContent div {
+  width: 100%;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.notFoundPageContent div:nth-child(1) {
+  justify-content: center;
+  align-items: center;
+}
+
+.notFoundPageContent p {
+  font-size: 1rem;
+}
+
+.notFoundPageContent span {
+  font-size: 2rem;
+}
+
+.notFoundPageContent a {
+  color: var(--pink);
+}
+
+.notFoundPageContent img {
+  display: flex;
+  width: 200%;
+}
