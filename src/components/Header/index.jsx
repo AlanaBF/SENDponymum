@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
-import NavDropdown from "react-bootstrap/NavDropdown";
+import Logo from "/SENDponymum.png";
 
 function Header() {
   return (
@@ -14,7 +14,7 @@ function Header() {
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand className="navbarBrand">
-            {/* <img src={favicon} alt="logo" width="50px" /> */}
+            <img src={Logo} alt="logo" width="50px" />
           </Navbar.Brand>
         </LinkContainer>
 
@@ -27,13 +27,10 @@ function Header() {
             <LinkContainer to="/">
               <Nav.Link className="navLink">Home</Nav.Link>
             </LinkContainer>
-
             {/* Blog  */}
-           
-              <LinkContainer to="/Blog">
-                <Nav.Link className="navLink">Blog Spot</Nav.Link>
-              </LinkContainer>
-
+            <LinkContainer to="/Blog">
+              <Nav.Link className="navLink">Blog Spot</Nav.Link>
+            </LinkContainer>
             {/* Contacts and info */}
             <LinkContainer to="/Contact">
               <Nav.Link className="navLink">Contact Me</Nav.Link>

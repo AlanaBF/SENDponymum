@@ -6,6 +6,7 @@
   --navy-blue: #181d31;
   --yellow: #fee46e;
   height: 100vh;
+  min-width: 100%;
 }
 
 * {
@@ -16,10 +17,10 @@
 
 body {
   font-family: "Sue Ellen Francisco", cursive;
-  max-width: 100%;
+  min-width: 100%;
   min-height: 90vh;
   text-align: center;
-  background-color: var(--yellow);
+  background-color: var(--yellow) !important;
   color: var(--dark-blue);
 }
 
@@ -27,11 +28,12 @@ h1 {
   font-family: "Gochi Hand", cursive;
   font-size: 5em;
   font-weight: 900;
+  min-width: 100%;
 }
 
 p {
   font-family: "Sue Ellen Francisco", cursive;
-  font-size: 2em;
+  font-size: 1.5em;
   padding: 20px 40px;
 }
 
@@ -45,7 +47,7 @@ margin-right: 40px;
 }
 
 .page-background {
-  min-height: 80vh;
+  min-height: 85vh;
 }
 
 /* Header Component */
@@ -84,10 +86,24 @@ margin-right: 40px;
   margin-left: 0%;
 }
 
+.navLink {
+  color: var(--pink) !important;
+  font-size: 60%;
+  border-radius: 20px;
+  width: auto;
+}
+
+.navLink:hover {
+  background-color: var(--pink);
+  color: var(--dark-blue) !important;
+  border-radius: 20px;
+  width: auto;
+}
+
 /*  Footer Component */
 
 .footer {
-  width: 100%;
+  min-width: 100%;
   background-color: var(--purple) !important;
   color: var(--dark-blue);
   font-size: 1rem !important;
@@ -98,10 +114,9 @@ margin-right: 40px;
 
 /* Home Page */
 
-/* GridComponent.css */
-.grid-container {
+/* .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  grid-template-columns: 1fr 1fr; 
 }
 
 .grid-item {
@@ -124,7 +139,47 @@ margin-right: 40px;
   background-color: var(--pink);
   padding: 10px;
   margin: 50px;
+} */
+
+/* GridComponent.css */
+.grid-container {
+  display: grid;
+  grid-gap: 20px; /* Adjust the gap between items */
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+  /* Creates as many columns as can fit without going below 250px width */
 }
+
+.grid-item {
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 2%;
+  text-align: center; /* Centers text and inline elements like images */
+  overflow: hidden; /* Prevents content from spilling out */
+}
+
+/* Adjustments for images within grid items */
+.grid-item img {
+  max-width: 100%; /* Ensures image is responsive and fits its container */
+  height: auto; /* Maintains the aspect ratio of the image */
+  display: block; /* Treats the image as a block-level element */
+  margin: 0 auto; /* Additional centering for the image if needed */
+}
+
+.journey-grid-container {
+  border: var(--purple) 5px solid;
+  margin: 1% 10%;
+}
+
+.new-services {
+  background-color: var(--pink);
+  padding: 10px;
+  margin: 50px;
+}
+
+
 /* Contact Me Page */
 
 .buttonGroup {

@@ -32,6 +32,9 @@ function Home() {
             raising a child with special needs in a rural setting.{" "}
           </p>
         </div>
+         <div className="grid-item">
+          <img src={Image3} alt="Image 3" />
+        </div>
         <div className="grid-item">
           <p>
             WHAT WILL YOU FIND ON MY BLOG? <br></br>Trot into our blog for
@@ -41,9 +44,6 @@ function Home() {
             managing meltdowns or inspiration for inclusive activities, our blog
             is your go-to resource for support and encouragement.
           </p>
-        </div>
-        <div className="grid-item">
-          <img src={Image3} alt="Image 3" />
         </div>
         <div className="grid-item">
           <img src={Image4} alt="Image 4" />
