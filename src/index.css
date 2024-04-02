@@ -59,6 +59,28 @@ margin-right: 40px;
   min-height: 85vh;
 }
 
+/* Gallery Page */
+.image-grid-container {
+  display: flex;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.image-grid img {
+  width: 20%; /* Adjust the width as needed */
+  margin: 5px; /* Adjust the margin as needed */
+  cursor: pointer;
+}
+
+.image-grid img.selected {
+  width: 80%; 
+}
+
 /* Header Component */
 
 .navigation {

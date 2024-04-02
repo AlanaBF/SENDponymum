@@ -1,53 +1,41 @@
-   import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import resourceCards from './resourceCard.json'; // Ensure the path to your JSON file is correct
 import Logo from "/logo.png"
-function Resources() {
+function Resources() { // Removed the unused props
   return (
     <div className="page-background">
-    <br/>
-    <h1>Resources</h1>
-    <br/>
-    <h2>Coming Soon</h2>
-    <br/>
-    <div style={{display: "flex", justifyContent: "space-around"}}>
-    <Card style={{ width: '18rem', backgroundColor: "var(--pink)" }}>
-      <Card.Img variant="top" src={Logo} />
-      <Card.Body>
-        <Card.Title>SEND Resources</Card.Title>
-        <Card.Text>
-        There are 100s of pathways and charities that offer help for SEND families.  These are resources that have worked for my family.
-        </Card.Text>
-        <Button style={{backgroundColor: "var(--purple)", border: "none", color: "var(--navy-blue"}}>Read More</Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem', backgroundColor: "var(--pink)"  }}>
-      <Card.Img variant="top" src={Logo} />
-      <Card.Body>
-        <Card.Title>Pony Resources</Card.Title>
-        <Card.Text>
-        Read about the gear and gadgets that we use and love.  </Card.Text>
-        <Button style={{backgroundColor: "var(--purple)", border: "none", color: "var(--navy-blue"}}>Read More</Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem', backgroundColor: "var(--pink)"  }}>
-      <Card.Img variant="top" src={Logo} />
-      <Card.Body>
-        <Card.Title>Days Out & Activities</Card.Title>
-        <Card.Text>
-        We are based in Surrey so most of these favourite places are close to us - we are looking to explore more widely though! Please get in touch if you have ideas. </Card.Text>
-        <Button style={{backgroundColor: "var(--purple)", border: "none", color: "var(--navy-blue"}}>Read More</Button>
-      </Card.Body>
-    </Card>
-    <Card style={{ width: '18rem', backgroundColor: "var(--pink)"  }}>
-      <Card.Img variant="top" src={Logo} />
-      <Card.Body>
-        <Card.Title>General Stuff We Like</Card.Title>
-        <Card.Text>
-        Clothes, food, toys...here&apos;s what we love in our family.  Let me know if you have something you love that we should check out! </Card.Text>
-        <Button style={{backgroundColor: "var(--purple)", border: "none", color: "var(--navy-blue"}}>Read More</Button>
-      </Card.Body>
-    </Card></div>
-    </div>
+      <br/>
+      <h1>Resources</h1>
+      <br/>
+      <h2>Coming Soon</h2>
+      <br/>
+      <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
+        {resourceCards.map((project, index) => (
+          <Card key={index} className="resourceCard" style={{ width: '18rem', backgroundColor: "var(--pink)" }}>
+            <div className="cardImagePosition">
+              <Card.Img
+                className="cardImage"
+                variant="top"
+                alt={`Image for ${project.name}`}
+                src={Logo}
+              />
+            </div>
+            <Card.Body className="cardBodyText">
+              <Card.Title>
+                <h4 className="cardBodyTitle">
+                  <strong>{project.name}</strong>
+                </h4>
+              </Card.Title>
+            </Card.Body>
+            <Card.Body className="cardBodyLinks">
+              {project.description}
+            </Card.Body>
+            <Button style={{ backgroundColor: "var(--purple)", border: "none", color: "var(--navy-blue)" }}>Read More</Button>
+          </Card>
+          ))}
+      </div>
+      </div>
   );
 }
 
