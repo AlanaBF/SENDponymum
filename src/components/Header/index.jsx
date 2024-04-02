@@ -33,6 +33,9 @@ function Header() {
             <LinkContainer to="/Resources">
               <Nav.Link className="navLink">Resources</Nav.Link>
             </LinkContainer>
+            <LinkContainer to="/Gallery">
+              <Nav.Link className="navLink">Gallery</Nav.Link>
+            </LinkContainer>
             {/* Blog  */}
             <LinkContainer to="/Blog">
               <Nav.Link className="navLink">Blog Spot</Nav.Link>
