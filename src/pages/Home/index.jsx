@@ -11,13 +11,14 @@ function Home() {
         Empowering children with special educational needs in the equine
         community.
       </p>
-      <div className="grid-container">
-        <div className="grid-item">
-          <img src={Image2} alt="Image 2" />
+      <div>
+        <div>
+          <img className="about-me-images" src={Image2} alt="Image 2" />
         </div>
-        <div className="grid-item">
+        <div>
+          <br />
+          <h1>WHO AM I?</h1>
           <p>
-            WHO AM I?<br></br>
             At SENDponymum, we understand the unique challenges and joys of
             raising a child with special needs along with a love of horses. Our
             founder, Rebecca Moore, a devoted mother and advocate, established
@@ -32,31 +33,35 @@ function Home() {
             raising a child with special needs in a rural setting.{" "}
           </p>
         </div>
-         <div className="grid-item">
-          <img src={Image3} alt="Image 3" />
+        <div>
+          <img className="about-me-images" src={Image3} alt="Image 3" />
         </div>
-        <div className="grid-item">
+        <div>
+          <br />
+          <h1>WHAT WILL YOU FIND ON MY BLOG?</h1>
           <p>
-            WHAT WILL YOU FIND ON MY BLOG? <br></br>Trot into our blog for
-            insightful articles, personal stories, and practical tips from
-            parents, educators, and experts in the fields of special education
-            and the equine community. Whether you&apos;re seeking advice on
-            managing meltdowns or inspiration for inclusive activities, our blog
-            is your go-to resource for support and encouragement.
+            Trot into our blog for insightful articles, personal stories, and
+            practical tips from parents, educators, and experts in the fields of
+            special education and the equine community. Whether you&apos;re
+            seeking advice on managing meltdowns or inspiration for inclusive
+            activities, our blog is your go-to resource for support and
+            encouragement.
           </p>
         </div>
-        <div className="grid-item">
-          <img src={Image4} alt="Image 4" />
+        <div>
+          <img className="about-me-images" src={Image4} alt="Image 4" />
         </div>
-        <div className="grid-item">
+        <div>
+          <br />
+          <h1>WHY DID I START THIS BLOG? </h1>
           <p>
-            WHY DID I START THIS BLOG? <br></br>I started SENDponymum because of
-            my own experience as a parent raising children with special
-            educational needs. Navigating the challenges of supporting my
-            daughters, who have a deep love for horses and the outdoors, while
-            also seeking out resources and connections within our rural
-            community, inspired me to create a platform where others facing
-            similar situations could find support and guidance.
+            I started SENDponymum because of my own experience as a parent
+            raising children with special educational needs. Navigating the
+            challenges of supporting my daughters, who have a deep love for
+            horses and the outdoors, while also seeking out resources and
+            connections within our rural community, inspired me to create a
+            platform where others facing similar situations could find support
+            and guidance.
           </p>
         </div>
       </div>
@@ -119,10 +124,21 @@ function Home() {
           and equine community
         </p>
       </div>
+
       <div className="new-services">
-        <p><strong>New services Coming Soon!</strong></p>
-        <p>Online Appointments</p>
-        <p>Blog Spot</p>
+        <p>
+          <strong>New services Coming Soon!</strong>
+        </p>
+        <h1>Subscribe</h1>
+        <p>
+          Sign up for blogs and access to SEND help and advice, plus
+          pony-related links and fun. Please check your junk/spam. We promise
+          not to bombard you and really appreciate your interest.
+        </p>
+        <h1>Blog Spot</h1>
+        <h1>Gallery</h1>
+        <h1>Resources</h1>  
+        <h1>Online Appointments</h1>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { LinkContainer } from "react-router-bootstrap";
-import Logo from "/SENDponymum.png";
+import Logo from "/logo.png";
 
 function Header() {
   return (
@@ -14,7 +14,7 @@ function Header() {
       <Container>
         <LinkContainer to="/">
           <Navbar.Brand className="navbarBrand">
-            <img src={Logo} alt="logo" width="50px" />
+            <img src={Logo} alt="logo" width="150px" />
           </Navbar.Brand>
         </LinkContainer>
 
@@ -26,6 +26,12 @@ function Header() {
           <Nav className="me-auto navbar-nav mx-auto text-md-center text-left">
             <LinkContainer to="/">
               <Nav.Link className="navLink">Home</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/PonyPerspectives">
+              <Nav.Link className="navLink">Pony Perspectives</Nav.Link>
+            </LinkContainer>
+            <LinkContainer to="/Resources">
+              <Nav.Link className="navLink">Resources</Nav.Link>
             </LinkContainer>
             {/* Blog  */}
             <LinkContainer to="/Blog">

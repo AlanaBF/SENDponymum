@@ -1,10 +1,13 @@
-//Contact page with links to my LinkedIn, Github, Twitter and emails
+import MainImage from "/whoamI.png"
 function Contact() {
   return (
     <div className="page-background">
       <h1>Contact Me</h1>
+      <img className="contact-image" src={MainImage}></img>
       <p>
-        If you want to get in contact please click on one of the links
+        Email: bex@sendponymum.com
+        <br/> OR 
+        <br/>click on one of the links
         <br />
       </p>
       <span className="buttonGroup">

@@ -10,6 +10,9 @@ import {
   Contact,
   Blog,
   NotFound,
+  Resources,
+PonyPerspectives,
+Gallery
  
 } from "./pages";
 import Header from "./components/Header";
@@ -22,6 +25,9 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Blog" element={<Blog />} />
+        <Route path="/Resources" element={<Resources />} />
+        <Route path="/PonyPerspectives" element={<PonyPerspectives />} />
+        <Route path="/Gallery" element={<Gallery />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     )

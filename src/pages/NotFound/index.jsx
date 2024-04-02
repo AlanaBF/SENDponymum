@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Logo from "/SENDponymum.png";
+import Logo from "/logo.png";
 
 const NotFound = () => {
   return (
