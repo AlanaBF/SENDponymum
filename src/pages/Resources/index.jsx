@@ -10,9 +10,9 @@ function Resources() { // Removed the unused props
       <br/>
       <h2>Coming Soon</h2>
       <br/>
-      <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
+      <div style={{ display: "flex", justifyContent: "space-around", flexWrap: "wrap"}}>
         {resourceCards.map((project, index) => (
-          <Card key={index} className="resourceCard" style={{ width: '18rem', backgroundColor: "var(--pink)" }}>
+          <Card key={index} className="resourceCard" style={{ width: '18rem', backgroundColor: "var(--pink)" , margin: '1rem'}}>
             <div className="cardImagePosition">
               <Card.Img
                 className="cardImage"
