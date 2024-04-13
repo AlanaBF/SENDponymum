@@ -45,6 +45,9 @@ width: 40%;
 border: solid 5px var(--purple);
 }
 
+.aam-image {
+  width:20%;
+}
 .contact-image {
 border-radius: 300px;
 width: 20%;
