@@ -1,43 +1,38 @@
 [
   {
-    "link": "/1.webp",
+    "link": "/Day1AAM.jpeg",
     "alt": "Image 1"
   },
   {
-    "link": "/2.webp",
+    "link": "/Day2AAM.jpeg",
     "alt": "Image 2"
   },
   {
-    "link": "/3.webp",
+    "link": "/Day3AAM.jpeg",
     "alt": "Image 3"
   },
   {
-    "link": "/4.webp",
+    "link": "/Day4AAM.jpeg",
     "alt": "Image 4"
   },
   {
-    "link": "/5.webp",
+    "link": "/Day5AAM.jpeg",
     "alt": "Image 5"
   },
   {
-    "link": "/6.webp",
+    "link": "/Day6AAM.jpeg",
     "alt": "Image 6"
   },
   {
-    "link": "/7.webp",
+    "link": "/Day7AAM.jpeg",
     "alt": "Image 7"
   },
   {
-    "link": "/8.jpg",
+    "link": "/Day8AAM.jpeg",
     "alt": "Image 8"
   },
   {
-    "link": "/9.jpg",
+    "link": "/Day9AAM.jpeg",
     "alt": "Image 9"
-  },
-  {
-    "link": "/10.jpg",
-    "alt": "Image 10"
   }
- 
 ]

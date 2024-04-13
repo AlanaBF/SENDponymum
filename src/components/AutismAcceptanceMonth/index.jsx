@@ -1,22 +1,25 @@
+import  { useState } from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import CarouselImage1 from './Day1AAM.jpeg';
-import CarouselImage2 from './Day2AAM.jpeg';
+import aam from "./aam.json";
 
 function AutismAcceptanceMonth() {
+  const [index, setIndex] = useState(0);
+
+  const handleSelect = (selectedIndex) => {
+    setIndex(selectedIndex);
+  };
+
   return (
-    <Carousel fade>
-      <Carousel.Item>
-        <img src={CarouselImage1} className='carousel-image'></img>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src={CarouselImage2} className='carousel-image' ></img>
-     
-      </Carousel.Item>
-      {/* <Carousel.Item>
-        <CarouselImage1 text="Third slide" />
-        <Carousel.Caption>
-        </Carousel.Caption>
-      </Carousel.Item> */}
+    <Carousel activeIndex={index} onSelect={handleSelect} fade>
+      {aam.map((image, idx) => (
+        <Carousel.Item key={idx}>
+          <img
+            className="carousel-image"
+            src={image.link}
+            alt={`Image ${idx + 1}`}
+          />
+        </Carousel.Item>
+      ))}
     </Carousel>
   );
 }
